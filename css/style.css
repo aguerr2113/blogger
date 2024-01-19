@@ -1,0 +1,77 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+
+}
+#nav-header{
+    overflow: hidden;
+    background-color: azure;
+    margin-left: 200px;
+}
+/* main nav */
+header a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header a:hover{
+    background-color: aquamarine;
+
+}
+
+/* sidebar/side nav */
+
+#side-bar{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.468);
+    overflow-x:hidden ;
+}
+
+
+#side-bar a{
+    background-color: black;
+    color: white;
+    padding:16px;
+    text-decoration: none;
+    display: block;
+}
+#side-bar a:hover{
+    background-color: rgba(0, 0, 0, 0.183);
+    
+
+}
+/* main content */
+#main-card{
+    margin-left: 200px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #side-bar {
+        width: 100%;  /* Full width for smaller screens */
+        position: relative; /* Optional: change position if needed */
+    }
+
+    #nav-header {
+        margin-left: 0; /* Remove margin to allow full width */
+    }
+
+    #main-card {
+        margin-left: 0; /* Remove margin for the main content as well */
+    }
+
+    header a {
+        float: none; /* Optional: Adjust layout of navigation links */
+    }
+}
